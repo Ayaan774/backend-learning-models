@@ -13,10 +13,10 @@ app.use(cors({
 }))
 
 app.use(express.json({
-  limit: "40kb",
+  limit: "100kb",
 }));
 
-app.use(express.urlencoded({extended: true, limit: "40kb"})); //encode url data
+app.use(express.urlencoded({extended: true, limit: "100kb"})); //encode url data
 
 app.use(express.static("public")); //used for assests
 
